@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual básico de HTML5</title>
+</head>
+<body>
+
+    <header>
+        <h1>Manual básico de HTML5</h1>
+        <p>Guía práctica para aprender los fundamentos de HTML y editar ejemplos en Visual Studio Code.</p>
+        <nav>
+            <a href="#estructura">Estructura</a> |
+            <a href="#texto">Texto</a> |
+            <a href="#enlaces">Enlaces</a> |
+            <a href="#imagenes">Imágenes</a> |
+            <a href="#listas">Listas</a> |
+            <a href="#tablas">Tablas</a> |
+            <a href="#formularios">Formularios</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. ¿Qué es HTML5?</h2>
+            <p>
+                HTML es un lenguaje de marcado utilizado para estructurar el contenido
+                de las páginas web. HTML5 utiliza elementos y etiquetas para organizar
+                textos, imágenes, enlaces, formularios y otros contenidos.
+            </p>
+        </section>
+
+        <section id="estructura">
+            <h2>2. Estructura básica de un documento HTML5</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola mundo&lt;/h1&gt;
+    &lt;p&gt;Esta es mi primera página web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Partes principales</h3>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong>: indica que se utiliza HTML5.</li>
+                <li><strong>&lt;html&gt;</strong>: elemento principal del documento.</li>
+                <li><strong>&lt;head&gt;</strong>: contiene información sobre la página.</li>
+                <li><strong>&lt;title&gt;</strong>: título mostrado en la pestaña del navegador.</li>
+                <li><strong>&lt;body&gt;</strong>: contiene el contenido visible.</li>
+            </ul>
+        </section>
+
+        <section id="texto">
+            <h2>3. Títulos y párrafos</h2>
+
+            <h1>Título principal: h1</h1>
+            <h2>Título secundario: h2</h2>
+            <h3>Subtítulo: h3</h3>
+            <h4>Subtítulo: h4</h4>
+            <h5>Subtítulo: h5</h5>
+            <h6>Subtítulo: h6</h6>
+
+            <p>Este es un párrafo creado con la etiqueta &lt;p&gt;.</p>
+
+            <p>
+                Podemos usar <strong>strong</strong> para indicar importancia
+                y <em>em</em> para dar énfasis.
+            </p>
+        </section>
+
+        <section id="enlaces">
+            <h2>4. Enlaces</h2>
+            <p>Los enlaces se crean con la etiqueta &lt;a&gt;:</p>
+
+            <pre><code>&lt;a href="https://developer.mozilla.org/"&gt;Visitar MDN&lt;/a&gt;</code></pre>
+
+            <p>
+                Ejemplo:
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML">Aprender HTML en MDN</a>
+            </p>
+        </section>
+
+        <section id="imagenes">
+            <h2>5. Imágenes</h2>
+            <p>Para mostrar una imagen se utiliza la etiqueta &lt;img&gt;:</p>
+
+            <pre><code>&lt;img src="imagen.png" alt="Descripción de la imagen"&gt;</code></pre>
+
+            <p>
+                <strong>src</strong> indica la ubicación de la imagen y
+                <strong>alt</strong> proporciona una descripción alternativa.
+            </p>
+        </section>
+
+        <section id="listas">
+            <h2>6. Listas</h2>
+
+            <h3>Lista no ordenada</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Crear el archivo HTML.</li>
+                <li>Escribir el código.</li>
+                <li>Guardar el archivo.</li>
+                <li>Abrirlo en un navegador.</li>
+            </ol>
+        </section>
+
+        <section id="tablas">
+            <h2>7. Tablas</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Función</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Crea una tabla.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Crea una fila.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Crea una celda.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Crea una celda de encabezado.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>8. Formularios</h2>
+
+            <form>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+
+                <p>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo">
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>9. Elementos semánticos de HTML5</h2>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: encabezado.</li>
+                <li><strong>&lt;nav&gt;</strong>: navegación.</li>
+                <li><strong>&lt;main&gt;</strong>: contenido principal.</li>
+                <li><strong>&lt;section&gt;</strong>: sección temática.</li>
+                <li><strong>&lt;article&gt;</strong>: contenido independiente.</li>
+                <li><strong>&lt;footer&gt;</strong>: pie de página.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>10. Ejercicio práctico</h2>
+            <ol>
+                <li>Crea una carpeta llamada <strong>mi-primer-sitio</strong>.</li>
+                <li>Abre esa carpeta con Visual Studio Code.</li>
+                <li>Crea un archivo llamado <strong>index.html</strong>.</li>
+                <li>Copia una estructura básica de HTML5.</li>
+                <li>Agrega un título, un párrafo y una imagen.</li>
+                <li>Guarda los cambios y abre el archivo en tu navegador.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Manual básico de HTML5 para práctica y aprendizaje.</p>
+    </footer>
+
+</body>
+</html>
